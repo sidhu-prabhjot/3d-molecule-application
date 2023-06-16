@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul id="nav">
+        <li><a href="/index.html">Elements</a></li>
+        <li><a href="/upload.html">File Upload</a></li>
+        <li><a href="/display.html">View Molecule</a></li>
+      </ul>
+    </nav>
+    <div id="upload-form-container">
+      <form id="upload-form" method="POST" action="/upload" enctype="multipart/form-data">
+        <div class="input-container">
+          <label for="file-input">Select an SDF file:</label>
+          <input type="file" id="file-input" name="file" class="custom-file-input">
+        </div>
+        <div class="input-container">
+          <label for="name-input">Molecule Name:</label>
+          <input type="text" id="name-input" name="name">
+        </div>
+        <div class="input-container">
+          <input type="submit" id="upload-button" class="submit-button" value="Upload">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

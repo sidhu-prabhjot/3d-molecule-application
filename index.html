@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+</head>
+
+<body>
+  <nav>
+    <ul id="nav">
+      <li><a href="/index.html">Elements</a></li>
+      <li><a href="/upload.html">File Upload</a></li>
+      <li><a href="/display.html">View Molecule</a></li>
+    </ul>
+  </nav>
+  <div id="element-form-container">
+    <form id="element-form">
+      <h3>Add An Element</h3>
+      <div class="input-container">
+        <label for="element-number">Element Number:</label>
+        <input type="number" name="element-number" id="element-number" min="0" required>
+      </div>
+
+      <div class="input-container">
+        <label for="element-code">Element Code:</label>
+        <input type="text" name="element-code" id="element-code" required>
+      </div>
+
+      <div class="input-container">
+        <label for="element-name">Element Name:</label>
+        <input type="text" name="element-name" id="element-name" required>
+      </div>
+
+      <div class="input-container">
+        <label for="color1">Color 1:</label>
+        <input type="color" name="color1" id="color1">
+      </div>
+
+      <div class="input-container">
+        <label for="color2">Color 2:</label>
+        <input type="color" name="color2" id="color2">
+      </div>
+
+      <div class="input-container">
+        <label for="color3">Color 3:</label>
+        <input type="color" name="color3" id="color3">
+      </div>
+
+      <div class="input-container">
+        <label for="radius">Radius:</label>
+        <input type="number" name="radius" id="radius" min="0" required>
+      </div>
+      <input type="submit" value="Submit" class="submit-button">
+      <h3>Remove An Element</h3>
+      <div class="input-container">
+        <label for="element-name-delete">Name:</label>
+        <input type="text" name="element-name-delete" id="element-name-delete">
+      </div>
+      <input type="button" value="Delete" class="delete-button">
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="displayScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  </head>
+  <body>
+    <nav>
+        <ul id="nav">
+            <li><a href="/index.html">Elements</a></li>
+            <li><a href="/upload.html">File Upload</a></li>
+            <li><a href="/display.html">View Molecule</a></li>
+        </ul>
+    </nav>
+    <div id="svg-container"></div>
+    <div id="total-container">
+        <div id="rotate-form-container">
+            <div class="rotate-input-container">
+                <label for="x-input">X:</label>
+                <input type="number" id="x-input" name="x" min="0" max="360">
+            </div>
+
+            <div class="rotate-input-container">
+                <label for="y-input">Y:</label>
+                <input type="number" id="y-input" name="y" min="0" max="360">
+            </div>
+            <div class="rotate-input-container">
+                <label for="z-input">Z:</label>
+                <input type="number" id="z-input" name="z" min="0" max="360">
+            </div>
+        </div>  
+        <div class="rotate-input-container">
+            <button id="rotate-btn">Rotate</button>
+        </div>   
+    </div>
+    <div id="molecule-btn-container">
+            
+    </div> 
+  </body>
+</html>
